@@ -17,7 +17,7 @@ Welcome to the official repository of **Ecos De Papel**, a minimalist and soul-s
 🚀 Live Preview
 
 Experience the serenity here:  
-👉 [**Live Site Link**](https://pabeldev.github.io/Ibnu-Abil-Khair/)
+👉 [**Live Site Link**](https://ibnuabilkhair.ampabel.com/)
 
 🛠️ Built With
 
