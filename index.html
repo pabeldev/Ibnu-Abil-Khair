@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ibnu Abil Khair | Ecos De Papel</title>
+    <meta name="title" content="Ibnu Abil Khair | Ecos De Papel">
+    <meta name="description" content="নিস্তব্ধ এক ভূবন, যেখানে শব্দরা কথা বলে। ইবনু আবিল খায়েরের কথা ও কবিতার এক অনন্য নিবেদন।">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ibnuabilkhair.ampabel.com/">
+    <meta property="og:title" content="Ibnu Abil Khair | Ecos De Papel">
+    <meta property="og:description" content="নিস্তব্ধ এক ভূবন, যেখানে শব্দরা কথা বলে। ইবনু আবিল খায়েরের কথা ও কবিতার এক অনন্য নিবেদন।">
+    <meta property="og:image" content="https://ampabel.com/wp-content/uploads/2026/03/Ibnu-Abil-Khair-scaled.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ibnuabilkhair.ampabel.com/">
+    <meta property="twitter:title" content="Ibnu Abil Khair | Ecos De Papel">
+    <meta property="twitter:description" content="নিস্তব্ধ এক ভূবন, যেখানে শব্দরা কথা বলে। ইবনু আবিল খায়েরের কথা ও কবিতার এক অনন্য নিবেদন।">
+    <meta property="twitter:image" content="https://ampabel.com/wp-content/uploads/2026/03/Ibnu-Abil-Khair-scaled.jpg">
+
+    <link rel="icon" type="image/png" href="https://ampabel.com/wp-content/uploads/2026/03/IAK-Logo.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&family=Hind+Siliguri:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #03070b;
+            color: #ffffff;
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Background Effects --- */
+        .bg-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at center, #1a3c5e 0%, #020508 100%);
+        }
+
+        .shape { position: absolute; animation: smoothFloat 20s infinite ease-in-out; pointer-events: none; opacity: 0.15; }
+        .diamond { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); background: linear-gradient(45deg, #1e90ff, #003366); }
+        .s1 { top: 15%; left: 10%; width: 50px; height: 50px; filter: blur(4px); }
+
+        @keyframes smoothFloat {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(20px, -40px) rotate(10deg); }
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 100vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            .hero { background: #03070b; }
+            position: relative;
+        }
+
+        .hero::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); z-index: 1;
+        }
+
+        .hero-content { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+
+        .logo-main { max-width: 200px; margin-bottom: 35px; filter: drop-shadow(0 0 15px rgba(255,255,255,0.15)); }
+
+        h1 {
+            font-size: clamp(40px, 10vw, 85px); font-weight: 900;
+            color: #b3d9ff; text-shadow: 0 0 25px rgba(179, 217, 255, 0.4);
+            margin-bottom: 25px; letter-spacing: 2px; text-transform: uppercase;
+        }
+
+        .headphone-notice { margin-bottom: 70px; opacity: 0.8; }
+        .headphone-notice i { font-size: 28px; margin-bottom: 15px; display: block; color: #b3d9ff; }
+        .headphone-notice p { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; }
+
+        .cta-button {
+            display: inline-flex; align-items: center; text-decoration: none; color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3); padding: 20px 60px; border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); transition: 0.4s ease;
+            font-size: 20px; letter-spacing: 1px;
+        }
+        .cta-button:hover { background: #fff; color: #000; transform: translateY(-5px); }
+
+        /* --- Scroll & Floating Icons --- */
+        .scroll-down, .scroll-to-contact {
+            position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+            z-index: 2; color: #b3d9ff; font-size: 26px; animation: bounce 2s infinite;
+            opacity: 0.6; text-decoration: none; cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-12px); }
+        }
+
+        .back-to-top {
+            position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; border-radius: 50%;
+            background: linear-gradient(45deg, #1a3c5e, #b3d9ff); color: #03070b;
+            display: flex; justify-content: center; align-items: center; z-index: 99;
+            transition: 0.4s; opacity: 0; pointer-events: none; text-decoration: none;
+        }
+        .back-to-top.show { opacity: 0.8; pointer-events: auto; }
+        .back-to-top:hover { opacity: 1; transform: translateY(-5px); color: #fff; }
+
+        /* --- About Section --- */
+        .about-section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px 20px; position: relative; }
+        .about-card {
+            background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 30px; max-width: 1050px; display: flex; min-height: 550px; overflow: hidden; backdrop-filter: blur(20px);
+        }
+        .about-img { 
+            flex: 1; min-width: 450px; margin: 20px; border-radius: 10px;
+            background: url('https://ampabel.com/wp-content/uploads/2026/03/Ibnu-Abil-Khair-scaled.jpg') center/cover;
+        }
+        .about-content { flex: 1.2; padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+        .about-content h2 { font-size: 38px; color: #b3d9ff; margin-bottom: 25px; }
+        .about-content p { font-size: 18px; opacity: 0.85; margin-bottom: 20px; text-align: justify; }
+        .signature-simple { margin-top: 15px; font-family: 'Hind Siliguri'; font-size: 14px; opacity: 0.5; text-align: right; }
+
+        /* --- Contact Section --- */
+        .contact-section { min-height: 100vh; padding: 100px 20px; display: flex; flex-direction: column; align-items: center; }
+        .contact-container {
+            background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px; width: 100%; max-width: 650px; padding: 45px;
+        }
+        .form-control {
+            width: 100%; background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px; border-radius: 12px; color: #fff; margin-bottom: 20px; font-family: 'Hind Siliguri', sans-serif;
+        }
+        .form-control:focus { outline: none; border-color: #b3d9ff; box-shadow: 0 0 10px rgba(179, 217, 255, 0.2); }
+
+        .submit-btn {
+            width: 100%; padding: 18px; border-radius: 12px; border: none;
+            background: linear-gradient(45deg, #b3d9ff, #70d1ff);
+            color: #03070b; font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.4s;
+            text-transform: uppercase;
+        }
+        .submit-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(179, 217, 255, 0.3); }
+
+        /* --- Footer --- */
+        footer { text-align: center; padding: 60px; opacity: 0.7; font-size: 13px; }
+        footer a { color: #b3d9ff; text-decoration: none; font-weight: 600; }
+
+        @media (max-width: 850px) {
+            .about-card { flex-direction: column; }
+            .about-img { min-height: 350px; min-width: 100%; margin: 10px; }
+            h1 { font-size: 45px; }
+            .about-content { padding: 30px; }
+        }
+    </style>
+</head>
+<body id="home">
+
+    <div class="bg-container">
+        <div class="shape diamond s1"></div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="https://ampabel.com/wp-content/uploads/2026/03/IAK-Logo.png" alt="Logo" class="logo-main">
+            <h1>Ecos de Papel</h1>
+            <div class="headphone-notice">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <p>Use Earphones For Better Experience</p>
+            </div>
+            <a href="https://www.youtube.com/@ibnuabilkhair" target="_blank" class="cta-button">
+                আমাকে শুনুন <i class="fa-regular fa-circle-play" style="margin-left: 10px;"></i>
+            </a>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-card">
+            <div class="about-img"></div>
+            <div class="about-content">
+                <h2>আমার কথা</h2>
+                <p>আমি ইবনু আবিল খায়ের। একজন মানুষ, যে কেবল শব্দের মাঝে খুঁজে ফেরে আত্মার প্রশান্তি।</p>
+                <p>নিস্তব্ধ রজনীর শেষ প্রহরে তাহাজ্জুদের বিছানায় কোন এক যুবকের প্রভুর কাছে করা মিনতিগুলো, কিংবা কোনো বিরহী হৃদয়ের গুমরে মরা দীর্ঘশ্বাস—আমি কেবল সেই না বলা আর্তনাদগুলোকেই আমার কণ্ঠে তুলে আনার চেষ্টা করি।</p>
+                <div class="signature-simple">-ইতি, ইবনু আবিল খায়ের</div>
+            </div>
+        </div>
+        <a href="#contact" class="scroll-to-contact"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div style="text-align:center; margin-bottom:30px;">
+                <i class="fa-regular fa-message" style="font-size:30px; color:#b3d9ff; margin-bottom:15px;"></i>
+                <h2 style="font-family:'Hind Siliguri'; font-size:30px;">শব্দ হোক সেতুবন্ধন</h2>
+            </div>
+            <form action="https://formspree.io/f/mojkgzjg" method="POST">
+                <input type="text" name="name" class="form-control" placeholder="আপনার নাম" required>
+                <input type="email" name="_replyto" class="form-control" placeholder="আপনার ইমেইল" required>
+                <textarea name="message" class="form-control" rows="5" placeholder="আপনার মনের কথা..." required></textarea>
+                <button type="submit" class="submit-btn">পাঠিয়ে দিন</button>
+            </form>
+        </div>
+        <p style="margin-top: 45px; font-size: 16px; opacity: 0.8; text-align: center; max-width: 650px; padding: 0 20px;">
+            আপনার শব্দগুলো আমার দরজায় কড়া নাড়লে, শীঘ্রই কথা হবে। চায়ের দাওয়াত রইলো!
+        </p>
+    </section>
+
+    <a href="#home" class="back-to-top" id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <footer>
+        Copyright 2026 Developed by Team <a href="https://www.framempire.com" target="_blank">FramEmpire</a>
+    </footer>
+
+    <script>
+        const topBtn = document.getElementById("topBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                topBtn.classList.add("show");
+            } else {
+                topBtn.classList.remove("show");
+            }
+        };
+    </script>
+</body>
+</html>
